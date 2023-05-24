@@ -2845,6 +2845,8 @@ b {
     }
     .overlay-item__banner {
         padding-bottom: 280px;
+        width: 100%;
+        overflow: hidden;
     }
     .overlay-item__banner > img {
         position: absolute;
