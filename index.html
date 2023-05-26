@@ -13,9 +13,9 @@
 <body>
     <header class="header">
         <div class="container">
-            <a class="logo" href="/">
+            <div class="logo">
                 <img src="img/logo.svg" alt="">
-            </a>
+            </div>
             <nav class="header-nav">
                 <a class="header-nav__item" href="#methods">Особенности</a>
                 <a class="header-nav__item" href="#materials">Материалы</a>
@@ -48,11 +48,12 @@
             <div class="container">
                 <h2 class="main-section__h2">Всего 30 дней — и вы сможете приступить<br> к финальной отделке быстровозводимого дома</h2>
                 <h1 class="main-section__h1">ГЕЛИОС</h1>
+                <div class="main-section__layer"></div>
                 <div class="layout-selection">
                     <div class="layout-selection__header">
                         <ul class="layout-tabs">
-                            <li class="layout-tabs__item">Базовый</li>
-                            <li class="layout-tabs__item">С террасой</li>
+                            <li class="layout-tabs__item" data-planner="base">Базовый</li>
+                            <li class="layout-tabs__item" data-planner="tera">С террасой</li>
                         </ul>
                     </div>
                     <div class="layout-selection__content">
@@ -128,7 +129,9 @@
                                 <span class="green">Минимальное количество</span><br>
                                 сопрягаемых элементов
                             </h4>
-                            <p class="methods-list__text">Увеличивает скорость стройки в 3–4 раза</p>
+                            <p class="methods-list__text">
+                                Увеличивает скорость стройки<br> в 3–4 раза
+                            </p>
                             <a class="methods-list__link" data-link="methods-1">Подробнее</a>
                         </div>
                     </li>
@@ -141,7 +144,9 @@
                                 <span class="green">Энергосберегающая</span><br>
                                 конструкция
                             </h4>
-                            <p class="methods-list__text">Сокращает расходы на обслуживание дома вдвое</p>
+                            <p class="methods-list__text">
+                                Сокращает расходы на обслуживание<br> дома вдвое
+                            </p>
                             <a class="methods-list__link" data-link="methods-2">Подробнее</a>
                         </div>
                     </li>
@@ -154,7 +159,7 @@
                                 <span class="green">Перспектива</span><br>
                                 расширения
                             </h4>
-                            <p class="methods-list__text">Позволяет увеличить жилое пространство в любое время</p>
+                            <p class="methods-list__text">Позволяет увеличить жилое<br> пространство в любое время</p>
                             <a class="methods-list__link" data-link="methods-3">Подробнее</a>
                         </div>
                     </li>
@@ -167,7 +172,7 @@
                                 <span class="green">Свободная</span><br>
                                 планировка
                             </h4>
-                            <p class="methods-list__text">Дает возможность сделать идеальное жилище под любые запросы</p>
+                            <p class="methods-list__text">Дает возможность сделать идеальное<br> жилище под любые запросы</p>
                             <a class="methods-list__link" data-link="methods-4">Подробнее</a>
                         </div>
                     </li>
@@ -302,25 +307,25 @@
                                 <ul class="documentation-list">
                                     <li class="documentation-list__item" data-link="documents-1">
                                         <a>
-                                            <b>Заключение экспертизы</b>
+                                            <b>Заключение экспертизы</b><br>
                                             на полиурентановый клей
                                         </a>
                                     </li>
                                     <li class="documentation-list__item" data-link="documents-2">
                                         <a>
-                                            <b>Свидетельство о гос. регистрации</b>
+                                            <b>Свидетельство о гос. регистрации</b><br>
                                             полиуретанового клея KIILTO
                                         </a>
                                     </li>
                                     <li class="documentation-list__item" data-link="documents-5">
                                         <a>
-                                            <b>Спецификация кроющего</b>
+                                            <b>Спецификация кроющего</b><br>
                                             антисептика VISA
                                         </a>
                                     </li>
                                     <li class="documentation-list__item" data-link="documents-6">
                                         <a>
-                                            <b>Свидетельство о гос. регистрации</b>
+                                            <b>Свидетельство о гос. регистрации</b><br>
                                             водно-дисперсионной краски ВД-АК
                                         </a>
                                     </li>
@@ -330,25 +335,25 @@
                                 <ul class="documentation-list">
                                     <li class="documentation-list__item" data-link="documents-3">
                                         <a>
-                                            <b>Техническая информация</b>
+                                            <b>Техническая информация</b><br>
                                             Эластопор Н 1701/22
                                         </a>
                                     </li>
                                     <li class="documentation-list__item" data-link="documents-4">
                                         <a>
-                                            <b>Свидетельство о гос. регистрации</b>
+                                            <b>Свидетельство о гос. регистрации</b><br>
                                             кроющего антисептика VISA
                                         </a>
                                     </li>
                                     <li class="documentation-list__item" data-link="documents-7">
                                         <a>
-                                            <b>Приложение о гос. регистрации</b>
+                                            <b>Приложение о гос. регистрации</b><br>
                                             краски ВД-АК
                                         </a>
                                     </li>
                                     <li class="documentation-list__item" data-link="documents-8">
                                         <a>
-                                            <b>Заключение экспертизы</b>
+                                            <b>Заключение экспертизы</b><br>
                                             на клеи и отвердители KIILTO
                                         </a>
                                     </li>
@@ -451,8 +456,8 @@
                     </div>
                     <div class="builder-form">
                         <div class="builder-form__wrapper">
-                            <div class="builder-form__type selected" data-gallery="based">базовый</div>
-                            <div class="builder-form__type" data-gallery="tera">C террасой</div>
+                            <div class="builder-form__type selected" data-gallery="based" data-planner="base">базовый</div>
+                            <div class="builder-form__type" data-gallery="tera" data-planner="tera">C террасой</div>
                         </div>
                         <ul>
                             <li><b>- Общая площадь:</b> 130 кв.м</li>
@@ -514,13 +519,13 @@
                     </div>
                     <div class="builder-form">
                         <div class="builder-form__wrapper">
-                            <div class="builder-form__type" data-gallery="based">базовый</div>
-                            <div class="builder-form__type selected" data-gallery="tera">C террасой</div>
+                            <div class="builder-form__type" data-gallery="based" data-planner="base">базовый</div>
+                            <div class="builder-form__type selected" data-gallery="tera" data-planner="tera">C террасой</div>
                         </div>
                         <ul>
-                            <li>- Общая площадь: 130 кв.м</li>
-                            <li>- Жилая площадь: 130 кв.м</li>
-                            <li>- Габариты: 130 кв.м</li>
+                            <li><b>- Общая площадь:</b> 130 кв.м</li>
+                            <li><b>- Жилая площадь:</b> 130 кв.м</li>
+                            <li><b>- Габариты:</b> 130 кв.м</li>
                         </ul>
                         <div class="builder-form__price">
                             <span>6,2 млн. руб</span>
@@ -556,8 +561,8 @@
                         <div>
                             <div class="completing-list__title">Стеновой комплект</div>
                             <ul>
-                                <li>Высота потолков: 3 метра</li>
-                                <li>Толщина стен: 245 см</li>
+                                <li><span class="lightbold">Высота потолков:</span> 3 метра</li>
+                                <li><span class="lightbold">Толища стен:</span> 245 см</li>
                             </ul>
                         </div>
                     </div>
@@ -608,8 +613,8 @@
                         <div>
                             <div class="completing-list__title">Каркасные перегородки</div>
                             <ul>
-                                <li>Материал: сухая строганная доска (46х110 мм)</li>
-                                <li>Шаг: 580 мм</li>
+                                <li><span class="lightbold">Материал</span> сухая строганная доска (46х110 мм)</li>
+                                <li><span class="lightbold">Шаг</span> 580 мм</li>
                                 <li>Внутри перегородок установлены диагональные связи жесткости</li>
                             </ul>
                         </div>
@@ -736,24 +741,30 @@
                     <li class="comfort-list__item">
                         <img class="comfort-list__preview" src="img/comfort-preview-1.jpg" alt="">
                         <div class="comfort-list__description">
-                            <div class="comfort-list__title">Расширяемое пространство</div>
-                            <p class="comfort-list__text">Разместите друзей на ночь в отдельной спальне и выделите под свои увлечения <b>отдельные комнаты.</b> Если со временем вам перестанет хватать места, мы с легкостью <b>сможем смонтировать дополнительные стены,</b> увеличив жилое пространство. </p>
+                            <div>
+                                <div class="comfort-list__title">Расширяемое пространство</div>
+                                <p class="comfort-list__text">Разместите друзей на ночь в отдельной спальне и выделите под свои увлечения <span class="bolder">отдельные комнаты.</span> Если со временем вам перестанет хватать места, мы с легкостью <span class="bolder">сможем смонтировать дополнительные стены,</span> увеличив жилое пространство. </p>
+                            </div>
                             <a class="comfort-list__link" data-link="comfort-1">Подробнее</a>
                         </div>
                     </li>
                     <li class="comfort-list__item">
                         <img class="comfort-list__preview" src="img/comfort-preview-2.jpg" alt="">
                         <div class="comfort-list__description">
-                            <div class="comfort-list__title">Комфортный микроклимат</div>
-                            <p class="comfort-list__text">Хороший дом строится на века. Проверенные, <b>экологически-чистые</b> материалы, которые мы используем для возведения теплого контура «Гелиос», обеспечивают оптимальную температуру помещения в любое время года.  </p>
+                            <div>
+                                <div class="comfort-list__title">Комфортный микроклимат</div>
+                                <p class="comfort-list__text">Хороший дом строится на века. Проверенные, <span class="bolder">экологически-чистые</span> материалы, которые мы используем для возведения теплого контура «Гелиос», обеспечивают оптимальную температуру помещения в любое время года.  </p>
+                            </div>
                             <a class="comfort-list__link" data-link="comfort-2">Подробнее</a>
                         </div>
                     </li>
                     <li class="comfort-list__item">
                         <img class="comfort-list__preview" src="img/comfort-preview-3.jpg" alt="">
                         <div class="comfort-list__description">
-                            <div class="comfort-list__title">Ваш дом — ваш статус</div>
-                            <p class="comfort-list__text">Вам <b>не придется тратить время</b> на проработку каждой комнаты или подбор подходящего специалиста — <b>готовые решения</b> порадуют вас своей функциональностью и утонченностью.</p>
+                            <div>
+                                <div class="comfort-list__title">Ваш дом — ваш статус</div>
+                                <p class="comfort-list__text">Вам <span class="bolder">не придется тратить время</span> на проработку каждой комнаты или подбор подходящего специалиста — <span class="bolder">готовые решения</span> порадуют вас своей функциональностью и утонченностью.</p>
+                            </div>
                             <a class="comfort-list__link" data-link="comfort-3">Подробнее</a>
                         </div>
                     </li>
@@ -797,7 +808,7 @@
                 <ul class="ready-reasons">
                     <li class="ready-reasons__item">
                         <p class="ready-reasons__text">
-                            <span class="green">Без посредников.</span>
+                            <span class="green bolder">Без посредников.</span>
                             Вы получаете
                             качественную продукцию напрямую
                             от производителя.
@@ -805,7 +816,7 @@
                     </li>
                     <li class="ready-reasons__item">
                         <p class="ready-reasons__text">
-                            <span class="green">Ювелирная точность.</span>
+                            <span class="green bolder">Ювелирная точность.</span>
                             Высокоточная
                             заводская зарезка всех элементов
                             — геометрия в пределах допуска +/- 1 мм.
@@ -813,7 +824,7 @@
                     </li>
                     <li class="ready-reasons__item">
                         <p class="ready-reasons__text">
-                            <span class="green">Контроль качества.</span>
+                            <span class="green bolder">Контроль качества.</span>
                             Процесс соответствует
                             всем строительным нормам и правилам,
                             а результат проверяют опытные специалисты.
@@ -840,6 +851,17 @@
         </section>
         <div class="overlay">
             <div class="container">
+                <div class="fullscreen-overlay">
+                    <button class="fullscreen-overlay__close"></button>
+                    <div class="container">
+                        <div class="fullscreen-overlay__img" data-fullscreen="planner1">
+                            <img src="img/planner-1.png" alt="">
+                        </div>
+                        <div class="fullscreen-overlay__img" data-fullscreen="planner2">
+                            <img src="img/planner-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
                 <div class="overlay-item" data-overlay="planner" style="max-width: 1004px;">
                     <div class="overlay-item__header">
                         <div class="overlay-item__title">Отправка<br> заявки</div>
@@ -855,7 +877,7 @@
                                 <div class="planner-list" data-list="planner-list">
                                     <div class="planner-list__item selected">
                                         <div class="container">
-                                            <img class="planner-list__preview" src="img/planner-1.png" alt="">
+                                            <img class="planner-list__preview" data-fullscreen="planner1" src="img/planner-1.png" alt="">
                                             <div class="radio-wrapper">
                                                 <input class="radio" type="radio" name="planner" id="planner-type">
                                                 <label for="planner-type"">Выбрано</label>
@@ -864,7 +886,7 @@
                                     </div>
                                     <div class="planner-list__item">
                                         <div class="container">
-                                            <img class="planner-list__preview" src="img/planner-1.png" alt="">
+                                            <img class="planner-list__preview" data-fullscreen="planner2" src="img/planner-1.png" alt="">
                                             <div class="radio-wrapper">
                                                 <input class="radio" type="radio" name="planner" id="planner-type">
                                                 <label for="planner-type"">Выбрано</label>
@@ -872,9 +894,11 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="planner-list__next">
                                     <img src="img/Arrow left.svg" alt="">
                                 </div>
+                                <div class="planner-list__fulscreen"></div>
                                 <div class="m-pagginator" data-pagginator="planner-list">
                                     <div class="m-pagginator__prev">
                                         <img src="img/Arrow left.svg" alt="">
@@ -917,7 +941,7 @@
                     </div>
                     <div class="overlay-item__content">
                         <p class="overlay-item__text">
-                            Вы видите актуальную стоимость дома на май <b>2023 года.</b> Если Вы оставите заявку до конца этого месяца, то получите готовую постройку за указанную стоимость.
+                            Вы видите актуальную стоимость дома на <span class="bolder">май 2023 года.</span> Если Вы оставите заявку до конца этого месяца, то получите готовую постройку за указанную стоимость.
                         </p>
                     </div>
                 </div>
@@ -1310,9 +1334,9 @@
     <footer class="footer">
         <div class="footer-top">
             <div>
-                <a class="logo" href="">
+                <div class="logo">
                     <img src="img/logo-white.svg" alt="">
-                </a>
+                </div>
                 <a class="contact-btn" href="tel:+88005553535">
                     <span>8 800 555 35 35</span>
                     <span>Задайте нам вопрос</span>

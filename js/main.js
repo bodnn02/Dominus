@@ -157,6 +157,17 @@ $(".layout-tabs__item").click(function() {
         $(".main-section").addClass("tera")
     }
 });
+$("[data-planner]").click(function() {
+    attr = $(this).attr("data-planner")
+    switch(attr) {
+        case("base"): {
+            $(".planner-footer__title").text("Домокомплект «Гелиос» (базовый)")
+        }break;
+        case("tera"): {
+            $(".planner-footer__title").text("Домокомплект «Гелиос» (с террасой)")
+        }break;
+    }
+});
 
 $(".planner-list__next").click(function() {
     list = $(".planner-list").children(".planner-list__item")
@@ -220,4 +231,16 @@ $(".m-pagginator__next").click(function() {
         $(pagginator_list).removeClass("selected")
         $(pagginator_list).eq(current_index + 1).addClass("selected")
     }
+});
+
+
+$(".planner-list__fulscreen").click(function() {
+    attr = $(".planner-list__item.selected").find(".planner-list__preview").attr("data-fullscreen")
+
+    $(".fullscreen-overlay").addClass("opened")
+    $(".fullscreen-overlay__img[data-fullscreen="+attr+"]").addClass("opened")
+});
+$(".fullscreen-overlay__close").click(function() {
+    $(".fullscreen-overlay").removeClass("opened")
+    $(".fullscreen-overlay").find(".opened").removeClass("opened")
 });
