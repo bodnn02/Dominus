@@ -2593,6 +2593,7 @@ b {
     }
     .documentation-content .m-pagginator {
         margin-left: 0;
+        margin-bottom: 0;
     }
     .documentation-content__prev {
         left: 20px;
