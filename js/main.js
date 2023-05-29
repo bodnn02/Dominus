@@ -64,17 +64,17 @@ $(".documentation-content__prev").click(function() {
     pages = $(this).parent().find(".documentation-pages")
     length = $(this).parent().find(".documentation-pages").children(".documentation-pages__item").length
     pagginator = $(this).parent().parent().find(".documentation-pagginator")
-    current_index = $(pages).find(".current").index()
+    current_index = $(pages).find(".selected").index()
 
     if(current_index - 1 < 0) {
-        $(pages).children(".documentation-pages__item").removeClass("current")
-        $(pages).children(".documentation-pages__item").eq(length - 1).addClass("current")
+        $(pages).children(".documentation-pages__item").removeClass("selected")
+        $(pages).children(".documentation-pages__item").eq(length - 1).addClass("selected")
 
         $(pagginator).children(".documentation-pagginator__item").removeClass("selected")
         $(pagginator).children(".documentation-pagginator__item").eq(length - 1).addClass("selected")
     } else {
-        $(pages).children(".documentation-pages__item").removeClass("current")
-        $(pages).children(".documentation-pages__item").eq(current_index - 1).addClass("current")
+        $(pages).children(".documentation-pages__item").removeClass("selected")
+        $(pages).children(".documentation-pages__item").eq(current_index - 1).addClass("selected")
 
         $(pagginator).children(".documentation-pagginator__item").removeClass("selected")
         $(pagginator).children(".documentation-pagginator__item").eq(current_index - 1).addClass("selected")
@@ -85,17 +85,17 @@ $(".documentation-content__next").click(function() {
     pages = $(this).parent().find(".documentation-pages")
     length = $(this).parent().find(".documentation-pages").children(".documentation-pages__item").length
     pagginator = $(this).parent().parent().find(".documentation-pagginator")
-    current_index = $(pages).find(".current").index()
+    current_index = $(pages).find(".selected").index()
 
     if(current_index + 1 == length) {
-        $(pages).children(".documentation-pages__item").removeClass("current")
-        $(pages).children(".documentation-pages__item").eq(0).addClass("current")
+        $(pages).children(".documentation-pages__item").removeClass("selected")
+        $(pages).children(".documentation-pages__item").eq(0).addClass("selected")
 
         $(pagginator).children(".documentation-pagginator__item").removeClass("selected")
         $(pagginator).children(".documentation-pagginator__item").eq(0).addClass("selected")
     } else {
-        $(pages).children(".documentation-pages__item").removeClass("current")
-        $(pages).children(".documentation-pages__item").eq(current_index + 1).addClass("current")
+        $(pages).children(".documentation-pages__item").removeClass("selected")
+        $(pages).children(".documentation-pages__item").eq(current_index + 1).addClass("selected")
 
         $(pagginator).children(".documentation-pagginator__item").removeClass("selected")
         $(pagginator).children(".documentation-pagginator__item").eq(current_index + 1).addClass("selected")

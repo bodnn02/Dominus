@@ -523,7 +523,7 @@ b {
 .documentation-pages__item {
     display: none;
 }
-.documentation-pages__item.current {
+.documentation-pages__item.selected {
     display: block;
 }
 .documentation-list {
@@ -2586,14 +2586,13 @@ b {
         margin: 0;
     }
     .documentation-pagginator {
-        position: relative;
-        margin-top: 34px;
-        margin-left: auto;
-        margin-right: auto;
+        display: none;
     }
     .documentation-content__prev, .documentation-content__next {
-        position: absolute;
-        bottom: -10px;
+        display: none;
+    }
+    .documentation-content .m-pagginator {
+        margin-left: 0;
     }
     .documentation-content__prev {
         left: 20px;
