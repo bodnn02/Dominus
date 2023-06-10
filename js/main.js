@@ -157,17 +157,6 @@ $(".layout-tabs__item").click(function() {
         $(".main-section").addClass("tera")
     }
 });
-$("[data-planner]").click(function() {
-    attr = $(this).attr("data-planner")
-    switch(attr) {
-        case("base"): {
-            $(".planner-footer__title").text("Домокомплект «Гелиос» (базовый)")
-        }break;
-        case("tera"): {
-            $(".planner-footer__title").text("Домокомплект «Гелиос» (с террасой)")
-        }break;
-    }
-});
 
 $(".planner-list__next").click(function() {
     list = $(".planner-list").children(".planner-list__item")

@@ -52,8 +52,8 @@
                 <div class="layout-selection">
                     <div class="layout-selection__header">
                         <ul class="layout-tabs">
-                            <li class="layout-tabs__item" data-planner="base">Базовый</li>
-                            <li class="layout-tabs__item" data-planner="tera">С террасой</li>
+                            <li class="layout-tabs__item">Базовый</li>
+                            <li class="layout-tabs__item">С террасой</li>
                         </ul>
                     </div>
                     <div class="layout-selection__content">
@@ -67,7 +67,7 @@
                                     <div class="layout-selection__hint" data-link="main">
                                         <span>Фиксированная цена</span>
                                     </div>
-                                    <button class="layout-selection__button" data-link="planner">Выбрать планировку</button>
+                                    <button class="layout-selection__button" data-link="planner-base">Выбрать планировку</button>
                                 </div>
                                 <ul class="layout-stats">
                                     <li class="layout-stats__item">
@@ -87,13 +87,13 @@
                             <li class="layout-tabs__item">
                                 <div>
                                     <div class="layout-selection__price">
-                                        <span>4,95 млн. руб</span>
-                                        <span>6,74 млн. руб</span>
+                                        <span>6,45 млн. руб</span>
+                                        <span>8,25 млн. руб</span>
                                     </div>
                                     <div class="layout-selection__hint" data-link="main">
                                         <span>Фиксированная цена</span>
                                     </div>
-                                    <button class="layout-selection__button" data-link="planner">Выбрать планировку</button>
+                                    <button class="layout-selection__button" data-link="planner-tera">Выбрать планировку</button>
                                 </div>
                                 <ul class="layout-stats">
                                     <li class="layout-stats__item">
@@ -490,7 +490,7 @@
                             <span>6,74 млн. руб</span>
                         </div>
                         <div class="builder-form__hint" data-link="main">Фиксированная цена</div>
-                        <button class="button" data-link="planner">Выбрать планировку</button>
+                        <button class="button" data-link="planner-base">Выбрать планировку</button>
                     </div>
                 </div>
                 <div class="home-builder-function" data-gallery="tera">
@@ -553,11 +553,11 @@
                             <li><b>- Габариты:</b> 130 кв.м</li>
                         </ul>
                         <div class="builder-form__price">
-                            <span>4,95 млн. руб</span>
-                            <span>6,74 млн. руб</span>
+                            <span>6,45 млн. руб</span>
+                            <span>8,25 млн. руб</span>
                         </div>
                         <div class="builder-form__hint" data-link="main">Фиксированная цена</div>
-                        <button class="button" data-link="planner">Выбрать планировку</button>
+                        <button class="button" data-link="planner-tera">Выбрать планировку</button>
                     </div>
                 </div>
                 <div class="separator"></div>
@@ -896,7 +896,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="overlay-item" data-overlay="planner" style="max-width: 1004px;">
+                <div class="overlay-item" data-overlay="planner-base" style="max-width: 1004px;">
                     <div class="overlay-item__header">
                         <div class="overlay-item__title">Отправка<br> заявки</div>
                         <div class="overlay-item__close"></div>
@@ -965,6 +965,78 @@
                         <div class="planner-footer__price">
                             <span>4,95 млн. руб</span>
                             <span>6,74 млн. руб</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay-item" data-overlay="planner-tera" style="max-width: 1004px;">
+                    <div class="overlay-item__header">
+                        <div class="overlay-item__title">Отправка<br> заявки</div>
+                        <div class="overlay-item__close"></div>
+                    </div>
+                    <div class="overlay-item__content">
+                        <form class="planner-form">
+                            <div>
+                                <div class="overlay-item__title">1. Планировка</div>
+                                <div class="planner-list__prev" style="display: none;">
+                                    <img src="img/Arrow left.svg" alt="">
+                                </div>
+                                <div class="planner-list" data-list="planner-list">
+                                    <div class="planner-list__item selected">
+                                        <div class="container">
+                                            <img class="planner-list__preview" data-fullscreen="planner1" src="img/planner-1.png" alt="">
+                                            <div class="radio-wrapper">
+                                                <input class="radio" type="radio" name="planner" id="planner-type">
+                                                <label for="planner-type"">Выбрано</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="planner-list__item">
+                                        <div class="container">
+                                            <img class="planner-list__preview" data-fullscreen="planner2" src="img/planner-1.png" alt="">
+                                            <div class="radio-wrapper">
+                                                <input class="radio" type="radio" name="planner" id="planner-type">
+                                                <label for="planner-type"">Выбрано</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="planner-list__next">
+                                    <img src="img/Arrow left.svg" alt="">
+                                </div>
+                                <div class="planner-list__fulscreen"></div>
+                                <div class="m-pagginator" data-pagginator="planner-list">
+                                    <div class="m-pagginator__prev">
+                                        <img src="img/Arrow left.svg" alt="">
+                                    </div>
+                                    <ul class="m-pagginator__pages">
+                                        <li class="m-pagginator__page selected">1</li>
+                                        <li class="m-pagginator__page">2</li>
+                                    </ul>
+                                    <div class="m-pagginator__next">
+                                        <img src="img/Arrow left.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="separator">или</div>
+                                <div class="radio-wrapper">
+                                    <input class="radio" type="radio" name="planner" id="planner-type">
+                                    <label for="planner-type"">Индивидуальная планировка</label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="overlay-item__title">2. Контактная информация</div>
+                                <input class="input" placeholder="Ваше имя" type="text">
+                                <input class="input" placeholder="Город" type="text">
+                                <input class="input" placeholder="Номер телефона" type="tel">
+                                <button class="button" data-link="contacts">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="planner-footer">
+                        <div class="planner-footer__title">Домокомплект «Гелиос» (с террасой)</div>
+                        <div class="planner-footer__price">
+                            <span>6,45 млн. руб</span>
+                            <span>8,25 млн. руб</span>
                         </div>
                     </div>
                 </div>
