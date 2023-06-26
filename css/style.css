@@ -1911,7 +1911,7 @@ b {
     cursor: pointer;
 }
 .fullscreen-overlay__img {
-    display: none;
+    display: block;
     margin: 0 auto;
 
     position: absolute;
@@ -1930,9 +1930,6 @@ b {
     max-width: 80%;
     min-width: 50%;
     height: auto;
-}
-.fullscreen-overlay__img.opened {
-    display: block;
 }
 /* Overlay *Stop* */
 

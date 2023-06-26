@@ -224,10 +224,10 @@ $(".m-pagginator__next").click(function() {
 
 
 $(".planner-list__fulscreen").click(function() {
-    attr = $(".planner-list__item.selected").find(".planner-list__preview").attr("data-fullscreen")
+    src = $(this).parent().find(".planner-list__item.selected").find(".planner-list__preview").attr("src")
 
     $(".fullscreen-overlay").addClass("opened")
-    $(".fullscreen-overlay__img[data-fullscreen="+attr+"]").addClass("opened")
+    $(".fullscreen-overlay__img").children("img").attr("src", src)
 });
 $(".fullscreen-overlay__close").click(function() {
     $(".fullscreen-overlay").removeClass("opened")
