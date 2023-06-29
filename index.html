@@ -53,7 +53,7 @@
                     <div class="layout-selection__header">
                         <ul class="layout-tabs">
                             <li class="layout-tabs__item">Базовый</li>
-                            <li class="layout-tabs__item">С террасой</li>
+                            <li class="layout-tabs__item">Расширенный</li>
                         </ul>
                     </div>
                     <div class="layout-selection__content">
@@ -64,8 +64,13 @@
                                         <span>4,95 млн. руб</span>
                                         <span>6,74 млн. руб</span>
                                     </div>
-                                    <div class="layout-selection__hint" data-link="main">
-                                        <span>Фиксированная цена</span>
+                                    <div class="flex-wrapper">
+                                        <div class="layout-selection__hint" data-link="main">
+                                            <span>Фиксированная цена</span>
+                                        </div>
+                                        <div class="layout-selection__hint" data-link="equipment">
+                                            <span>Что в комплекте</span>
+                                        </div>
                                     </div>
                                     <button class="layout-selection__button" data-link="planner-base">Выбрать планировку</button>
                                 </div>
@@ -90,8 +95,13 @@
                                         <span>6,45 млн. руб</span>
                                         <span>8,25 млн. руб</span>
                                     </div>
-                                    <div class="layout-selection__hint" data-link="main">
-                                        <span>Фиксированная цена</span>
+                                    <div class="flex-wrapper">
+                                        <div class="layout-selection__hint" data-link="main">
+                                            <span>Фиксированная цена</span>
+                                        </div>
+                                        <div class="layout-selection__hint" data-link="equipment">
+                                            <span>Что в комплекте</span>
+                                        </div>
                                     </div>
                                     <button class="layout-selection__button" data-link="planner-tera">Выбрать планировку</button>
                                 </div>
@@ -406,7 +416,7 @@
                                 <span>70 000 руб.</span>
                                 <span>В подарок</span>
                             </div>
-                            <button class="button" data-link="planner">Выбрать планировку</button>
+                            <button class="button" data-link="planner-base">Выбрать планировку</button>
                         </div>
                     </div>
                 </div>
@@ -427,235 +437,365 @@
             <div class="container">
                 <h2 class="section-h2">Дом, который подстроится под ваши потребности</h2>
                 <div class="home-builder-function selected" data-gallery="based">
-                    <div class="builder-gallery selected">
-                        <div class="builder-gallery__preview">
-                            <div class="builder-gallery__images">
-                                <img class="current" src="img/builder-gallery-0.jpg" alt="">
-                                <img src="img/builder-gallery-1.jpg" alt="">
-                                <img src="img/builder-gallery-6.jpg" alt="">
-                                <img src="img/builder-gallery-7.jpg" alt="">
-                                <img src="img/builder-gallery-2.jpg" alt="">
-                                <img src="img/builder-gallery-3.jpg" alt="">
-                                <img src="img/builder-gallery-4.jpg" alt="">
-                                <img src="img/builder-gallery-5.jpg" alt="">
+                    <div class="home-builder-wrapper">
+                        <div class="builder-gallery selected">
+                            <div class="builder-gallery__preview">
+                                <div class="builder-gallery__images">
+                                    <img class="current" src="img/builder-gallery-0.jpg" alt="">
+                                    <img src="img/builder-gallery-1.jpg" alt="">
+                                    <img src="img/builder-gallery-6.jpg" alt="">
+                                    <img src="img/builder-gallery-7.jpg" alt="">
+                                    <img src="img/builder-gallery-2.jpg" alt="">
+                                    <img src="img/builder-gallery-3.jpg" alt="">
+                                    <img src="img/builder-gallery-4.jpg" alt="">
+                                    <img src="img/builder-gallery-5.jpg" alt="">
+                                </div>
+                                <div class="builder-gallery__bottom">
+                                    <ul>
+                                        <li>
+                                            <img class="builder-gallery__icon" src="img/Group.svg" alt="">
+                                            <p class="builder-gallery__text">4 человека</p>
+                                        </li>
+                                        <li>
+                                            <img class="builder-gallery__icon" src="img/bedroom.svg" alt="">
+                                            <p class="builder-gallery__text">3 спальни</p>
+                                        </li>
+                                        <li>
+                                            <img class="builder-gallery__icon" src="img/shower.svg" alt="">
+                                            <p class="builder-gallery__text">2 санузла</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="builder-gallery__bottom">
+                            <div class="gallery-pagginator">
+                                <button class="gallery-pagginator__prev">
+                                    <img src="img/Arrow left.svg" alt="">
+                                </button>
+                                <ul class="pagginatior-pages">
+                                    <li class="pagginatior-pages__item selected"></li>
+                                    <li class="pagginatior-pages__item"></li>
+                                    <li class="pagginatior-pages__item"></li>
+                                    <li class="pagginatior-pages__item"></li>
+                                    <li class="pagginatior-pages__item"></li>
+                                    <li class="pagginatior-pages__item"></li>
+                                    <li class="pagginatior-pages__item"></li>
+                                    <li class="pagginatior-pages__item"></li>
+                                </ul>
+                                <button class="gallery-pagginator__next">
+                                    <img src="img/Arrow left.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="builder-form">
+                            <div class="builder-form__wrapper">
+                                <div class="builder-form__type selected" data-gallery="based" data-planner="base">базовый</div>
+                                <div class="builder-form__type" data-gallery="tera" data-planner="tera">Расширенный</div>
+                            </div>
+                            <ul>
+                                <li><b>- Общая площадь:</b> 128 кв.м</li>
+                                <li><b>- Жилая площадь:</b> 126 кв.м</li>
+                                <li><b>- Габариты:</b> 13 x 9,9 м</li>
+                            </ul>
+                            <div class="builder-form__price">
+                                <span>4,95 млн. руб</span>
+                                <span>6,74 млн. руб</span>
+                            </div>
+                            <div class="builder-form__hint" data-link="main">Фиксированная цена</div>
+                            <button class="button" data-link="planner-base">Выбрать планировку</button>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+                    <h3 class="home-builder__h3">Комплектация</h3>
+                    <div class="m-pagginator" data-pagginator="completing-list">
+                        <div class="m-pagginator__prev">
+                            <img src="img/Arrow left.svg" alt="">
+                        </div>
+                        <ul class="m-pagginator__pages">
+                            <li class="m-pagginator__page selected">1</li>
+                            <li class="m-pagginator__page">2</li>
+                            <li class="m-pagginator__page">3</li>
+                            <li class="m-pagginator__page">4</li>
+                            <li class="m-pagginator__page">5</li>
+                            <li class="m-pagginator__page">6</li>
+                        </ul>
+                        <div class="m-pagginator__next">
+                            <img src="img/Arrow left.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="completing-list" data-list="completing-list">
+                        <div class="completing-list__item selected">
+                            <div class="completing-list__preview">
+                                <img src="img/completing-preview-1.png" alt="">
+                            </div>
+                            <div>
+                                <div class="completing-list__title">Стеновой комплект</div>
                                 <ul>
-                                    <li>
-                                        <img class="builder-gallery__icon" src="img/Group.svg" alt="">
-                                        <p class="builder-gallery__text">4 человека</p>
-                                    </li>
-                                    <li>
-                                        <img class="builder-gallery__icon" src="img/bedroom.svg" alt="">
-                                        <p class="builder-gallery__text">3 спальни</p>
-                                    </li>
-                                    <li>
-                                        <img class="builder-gallery__icon" src="img/shower.svg" alt="">
-                                        <p class="builder-gallery__text">2 санузла</p>
-                                    </li>
+                                    <li><span class="lightbold">Высота потолков:</span> 3 метра</li>
+                                    <li><span class="lightbold">Толища стен:</span> 245 мм</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="gallery-pagginator">
-                            <button class="gallery-pagginator__prev">
-                                <img src="img/Arrow left.svg" alt="">
-                            </button>
-                            <ul class="pagginatior-pages">
-                                <li class="pagginatior-pages__item selected"></li>
-                                <li class="pagginatior-pages__item"></li>
-                                <li class="pagginatior-pages__item"></li>
-                                <li class="pagginatior-pages__item"></li>
-                                <li class="pagginatior-pages__item"></li>
-                                <li class="pagginatior-pages__item"></li>
-                                <li class="pagginatior-pages__item"></li>
-                                <li class="pagginatior-pages__item"></li>
-                            </ul>
-                            <button class="gallery-pagginator__next">
-                                <img src="img/Arrow left.svg" alt="">
-                            </button>
+                        <div class="completing-list__item">
+                            <div class="completing-list__preview">
+                                <img src="img/completing-preview-2.png" alt="">
+                            </div>
+                            <div>
+                                <div class="completing-list__title">Плоская кровля</div>
+                                <ol>
+                                    <li>Полимерная мембрана LOGICROOF V-RP</li>
+                                    <li>Система механического крепления ТЕХНОНИКОЛЬ</li>
+                                    <li>Экструзионный пенополистирол ТЕХНОНИКОЛЬ CARBON PROF SLOPE | ТЕХНОРУФ Н ПРОФ КЛИН</li>
+                                    <li>Экструзионный пенополистирол ТЕХНОНИКОЛЬ CARBON PROF SLOPE</li>
+                                    <li>Паробарьер С (А500 или Ф1000)</li>
+                                    <li>Деревянный настил (OSB-3)</li>
+                                    <li>Деревянная стропильная балка</li>
+                                </ol>
+                            </div>
                         </div>
-                    </div>
-                    <div class="builder-form">
-                        <div class="builder-form__wrapper">
-                            <div class="builder-form__type selected" data-gallery="based" data-planner="base">базовый</div>
-                            <div class="builder-form__type" data-gallery="tera" data-planner="tera">C террасой</div>
+                        <div class="completing-list__item">
+                            <div class="completing-list__preview">
+                                <img src="img/completing-preview-3.png" alt="">
+                            </div>
+                            <div>
+                                <div class="completing-list__title">Безрамное остекление</div>
+                                <ul>
+                                    <li>Толщина стеклопакета: 56 мм</li>
+                                    <li>Все стекла закаленные с энергосберегающим покрытием</li>
+                                    <li>Заполнены аргоном</li>
+                                    <li>С пластиковой дистанционной рамкой</li>
+                                    <li>Защищает от ударов, осколков, шума, холода и избыточных УФ-лучей</li>
+                                </ul>
+                            </div>
                         </div>
-                        <ul>
-                            <li><b>- Общая площадь:</b> 128 кв.м</li>
-                            <li><b>- Жилая площадь:</b> 126 кв.м</li>
-                            <li><b>- Габариты:</b> 13 x 9,7 м</li>
-                        </ul>
-                        <div class="builder-form__price">
-                            <span>4,95 млн. руб</span>
-                            <span>6,74 млн. руб</span>
+                        <div class="completing-list__item">
+                            <div class="completing-list__preview">
+                                <img src="img/completing-preview-4.png" alt="">
+                            </div>
+                            <div>
+                                <div class="completing-list__title">Входные двери</div>
+                            </div>
                         </div>
-                        <div class="builder-form__hint" data-link="main">Фиксированная цена</div>
-                        <button class="button" data-link="planner-base">Выбрать планировку</button>
+                        <div class="completing-list__item">
+                            <div class="completing-list__preview">
+                                <img src="img/completing-preview-5.png" alt="">
+                            </div>
+                            <div>
+                                <div class="completing-list__title">Каркасные перегородки</div>
+                                <ul>
+                                    <li><span class="lightbold">Материал</span> сухая строганная доска (46х110 мм)</li>
+                                    <li><span class="lightbold">Шаг</span> 580 мм</li>
+                                    <li>Внутри перегородок установлены диагональные связи жесткости</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="completing-list__item">
+                            <div class="completing-list__preview">
+                                <img src="img/completing-preview-6.png" alt="">
+                            </div>
+                            <div>
+                                <div class="completing-list__title">Дополнительно</div>
+                                <ul>
+                                    <li>Упаковка</li>
+                                    <li>Погрузка и разгрузка домокомплекта</li>
+                                    <li>Монтаж коробки дома</li>
+                                    <li>Монтаж окон и дверей</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="home-builder-function" data-gallery="tera">
-                    <div class="builder-gallery selected">
-                        <div class="builder-gallery__preview">
-                            <div class="builder-gallery__images">
-                                <img class="current" src="img/builder-gallery-t-0.jpg" alt="">
-                                <img src="img/builder-gallery-t-1.jpg" alt="">
-                                <img src="img/builder-gallery-t-6.jpg" alt="">
-                                <img src="img/builder-gallery-t-7.jpg" alt="">
-                                <img src="img/builder-gallery-t-2.jpg" alt="">
-                                <img src="img/builder-gallery-t-3.jpg" alt="">
-                                <img src="img/builder-gallery-t-4.jpg" alt="">
-                                <img src="img/builder-gallery-t-5.jpg" alt="">
+                    <div class="home-builder-wrapper">
+                        <div class="builder-gallery selected">
+                            <div class="builder-gallery__preview">
+                                <div class="builder-gallery__images">
+                                    <img class="current" src="img/builder-gallery-t-0.jpg" alt="">
+                                    <img src="img/builder-gallery-t-1.jpg" alt="">
+                                    <img src="img/builder-gallery-t-6.jpg" alt="">
+                                    <img src="img/builder-gallery-t-7.jpg" alt="">
+                                    <img src="img/builder-gallery-t-2.jpg" alt="">
+                                    <img src="img/builder-gallery-t-3.jpg" alt="">
+                                    <img src="img/builder-gallery-t-4.jpg" alt="">
+                                    <img src="img/builder-gallery-t-5.jpg" alt="">
+                                </div>
+                                <div class="builder-gallery__bottom">
+                                    <ul>
+                                        <li>
+                                            <img class="builder-gallery__icon" src="img/Group.svg" alt="">
+                                            <p class="builder-gallery__text">4 человека</p>
+                                        </li>
+                                        <li>
+                                            <img class="builder-gallery__icon" src="img/bedroom.svg" alt="">
+                                            <p class="builder-gallery__text">3 спальни</p>
+                                        </li>
+                                        <li>
+                                            <img class="builder-gallery__icon" src="img/shower.svg" alt="">
+                                            <p class="builder-gallery__text">2 санузла</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="builder-gallery__bottom">
+                            <div class="gallery-pagginator">
+                                <button class="gallery-pagginator__prev">
+                                    <img src="img/Arrow left.svg" alt="">
+                                </button>
+                                <ul class="pagginatior-pages">
+                                    <li class="pagginatior-pages__item selected"></li>
+                                    <li class="pagginatior-pages__item"></li>
+                                    <li class="pagginatior-pages__item"></li>
+                                    <li class="pagginatior-pages__item"></li>
+                                    <li class="pagginatior-pages__item"></li>
+                                    <li class="pagginatior-pages__item"></li>
+                                    <li class="pagginatior-pages__item"></li>
+                                    <li class="pagginatior-pages__item"></li>
+                                </ul>
+                                <button class="gallery-pagginator__next">
+                                    <img src="img/Arrow left.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="builder-form">
+                            <div class="builder-form__wrapper">
+                                <div class="builder-form__type" data-gallery="based" data-planner="base">базовый</div>
+                                <div class="builder-form__type selected" data-gallery="tera" data-planner="tera">Расширенный</div>
+                            </div>
+                            <ul>
+                                <li><b>- Общая площадь:</b> 128 кв.м</li>
+                                <li><b>- Жилая площадь:</b> 126 кв.м</li>
+                                <li><b>- Габариты:</b> 17,1 x 14 м</li>
+                            </ul>
+                            <div class="builder-form__price">
+                                <span>6,45 млн. руб</span>
+                                <span>8,25 млн. руб</span>
+                            </div>
+                            <div class="builder-form__hint" data-link="main">Фиксированная цена</div>
+                            <button class="button" data-link="planner-tera">Выбрать планировку</button>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+                    <h3 class="home-builder__h3">Комплектация</h3>
+                    <div class="m-pagginator" data-pagginator="completing-list-2">
+                        <div class="m-pagginator__prev">
+                            <img src="img/Arrow left.svg" alt="">
+                        </div>
+                        <ul class="m-pagginator__pages">
+                            <li class="m-pagginator__page selected">1</li>
+                            <li class="m-pagginator__page">2</li>
+                            <li class="m-pagginator__page">3</li>
+                            <li class="m-pagginator__page">4</li>
+                            <li class="m-pagginator__page">5</li>
+                            <li class="m-pagginator__page">6</li>
+                            <li class="m-pagginator__page">7</li>
+                            <li class="m-pagginator__page">8</li>
+                            <li class="m-pagginator__page">9</li>
+                        </ul>
+                        <div class="m-pagginator__next">
+                            <img src="img/Arrow left.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="completing-list" data-list="completing-list-2">
+                        <div class="completing-list__item selected">
+                            <div class="completing-list__preview">
+                                <img src="img/completing-preview-1.png" alt="">
+                            </div>
+                            <div>
+                                <div class="completing-list__title">Стеновой комплект</div>
                                 <ul>
-                                    <li>
-                                        <img class="builder-gallery__icon" src="img/Group.svg" alt="">
-                                        <p class="builder-gallery__text">4 человека</p>
-                                    </li>
-                                    <li>
-                                        <img class="builder-gallery__icon" src="img/bedroom.svg" alt="">
-                                        <p class="builder-gallery__text">3 спальни</p>
-                                    </li>
-                                    <li>
-                                        <img class="builder-gallery__icon" src="img/shower.svg" alt="">
-                                        <p class="builder-gallery__text">2 санузла</p>
-                                    </li>
+                                    <li><span class="lightbold">Высота потолков:</span> 3 метра</li>
+                                    <li><span class="lightbold">Толища стен:</span> 245 мм</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="gallery-pagginator">
-                            <button class="gallery-pagginator__prev">
-                                <img src="img/Arrow left.svg" alt="">
-                            </button>
-                            <ul class="pagginatior-pages">
-                                <li class="pagginatior-pages__item selected"></li>
-                                <li class="pagginatior-pages__item"></li>
-                                <li class="pagginatior-pages__item"></li>
-                                <li class="pagginatior-pages__item"></li>
-                                <li class="pagginatior-pages__item"></li>
-                                <li class="pagginatior-pages__item"></li>
-                                <li class="pagginatior-pages__item"></li>
-                                <li class="pagginatior-pages__item"></li>
-                            </ul>
-                            <button class="gallery-pagginator__next">
-                                <img src="img/Arrow left.svg" alt="">
-                            </button>
+                        <div class="completing-list__item">
+                            <div class="completing-list__preview">
+                                <img src="img/completing-preview-2.png" alt="">
+                            </div>
+                            <div>
+                                <div class="completing-list__title">Плоская кровля</div>
+                                <ol>
+                                    <li>Полимерная мембрана LOGICROOF V-RP</li>
+                                    <li>Система механического крепления ТЕХНОНИКОЛЬ</li>
+                                    <li>Экструзионный пенополистирол ТЕХНОНИКОЛЬ CARBON PROF SLOPE | ТЕХНОРУФ Н ПРОФ КЛИН</li>
+                                    <li>Экструзионный пенополистирол ТЕХНОНИКОЛЬ CARBON PROF SLOPE</li>
+                                    <li>Паробарьер С (А500 или Ф1000)</li>
+                                    <li>Деревянный настил (OSB-3)</li>
+                                    <li>Деревянная стропильная балка</li>
+                                </ol>
+                            </div>
                         </div>
-                    </div>
-                    <div class="builder-form">
-                        <div class="builder-form__wrapper">
-                            <div class="builder-form__type" data-gallery="based" data-planner="base">базовый</div>
-                            <div class="builder-form__type selected" data-gallery="tera" data-planner="tera">C террасой</div>
+                        <div class="completing-list__item">
+                            <div class="completing-list__preview">
+                                <img src="img/completing-preview-3.png" alt="">
+                            </div>
+                            <div>
+                                <div class="completing-list__title">Безрамное остекление</div>
+                                <ul>
+                                    <li>Толщина стеклопакета: 56 мм</li>
+                                    <li>Все стекла закаленные с энергосберегающим покрытием</li>
+                                    <li>Заполнены аргоном</li>
+                                    <li>С пластиковой дистанционной рамкой</li>
+                                    <li>Защищает от ударов, осколков, шума, холода и избыточных УФ-лучей</li>
+                                </ul>
+                            </div>
                         </div>
-                        <ul>
-                            <li><b>- Общая площадь:</b> 130 кв.м</li>
-                            <li><b>- Жилая площадь:</b> 130 кв.м</li>
-                            <li><b>- Габариты:</b> 130 кв.м</li>
-                        </ul>
-                        <div class="builder-form__price">
-                            <span>6,45 млн. руб</span>
-                            <span>8,25 млн. руб</span>
+                        <div class="completing-list__item">
+                            <div class="completing-list__preview">
+                                <img src="img/completing-preview-7.png" alt="">
+                            </div>
+                            <div>
+                                <div class="completing-list__title">Терраса</div>
+                            </div>
                         </div>
-                        <div class="builder-form__hint" data-link="main">Фиксированная цена</div>
-                        <button class="button" data-link="planner-tera">Выбрать планировку</button>
-                    </div>
-                </div>
-                <div class="separator"></div>
-                <h3 class="home-builder__h3">Комплектация</h3>
-                <div class="m-pagginator" data-pagginator="completing-list">
-                    <div class="m-pagginator__prev">
-                        <img src="img/Arrow left.svg" alt="">
-                    </div>
-                    <ul class="m-pagginator__pages">
-                        <li class="m-pagginator__page selected">1</li>
-                        <li class="m-pagginator__page">2</li>
-                        <li class="m-pagginator__page">3</li>
-                        <li class="m-pagginator__page">4</li>
-                        <li class="m-pagginator__page">5</li>
-                        <li class="m-pagginator__page">6</li>
-                    </ul>
-                    <div class="m-pagginator__next">
-                        <img src="img/Arrow left.svg" alt="">
-                    </div>
-                </div>
-                <div class="completing-list" data-list="completing-list">
-                    <div class="completing-list__item selected">
-                        <div class="completing-list__preview">
-                            <img src="img/completing-preview-1.png" alt="">
+                        <div class="completing-list__item">
+                            <div class="completing-list__preview">
+                                <img src="img/completing-preview-8.png" alt="">
+                            </div>
+                            <div>
+                                <div class="completing-list__title">Хозблок</div>
+                            </div>
                         </div>
-                        <div>
-                            <div class="completing-list__title">Стеновой комплект</div>
-                            <ul>
-                                <li><span class="lightbold">Высота потолков:</span> 3 метра</li>
-                                <li><span class="lightbold">Толища стен:</span> 245 мм</li>
-                            </ul>
+                        <div class="completing-list__item">
+                            <div class="completing-list__preview">
+                                <img src="img/completing-preview-9.png" alt="">
+                            </div>
+                            <div>
+                                <div class="completing-list__title">Навес и крыльцо</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="completing-list__item">
-                        <div class="completing-list__preview">
-                            <img src="img/completing-preview-2.png" alt="">
+                        <div class="completing-list__item">
+                            <div class="completing-list__preview">
+                                <img src="img/completing-preview-4.png" alt="">
+                            </div>
+                            <div>
+                                <div class="completing-list__title">Входные двери</div>
+                            </div>
                         </div>
-                        <div>
-                            <div class="completing-list__title">Плоская кровля</div>
-                            <ol>
-                                <li>Полимерная мембрана LOGICROOF V-RP</li>
-                                <li>Система механического крепления ТЕХНОНИКОЛЬ</li>
-                                <li>Экструзионный пенополистирол ТЕХНОНИКОЛЬ CARBON PROF SLOPE | ТЕХНОРУФ Н ПРОФ КЛИН</li>
-                                <li>Экструзионный пенополистирол ТЕХНОНИКОЛЬ CARBON PROF SLOPE</li>
-                                <li>Паробарьер С (А500 или Ф1000)</li>
-                                <li>Деревянный настил (OSB-3)</li>
-                                <li>Деревянная стропильная балка</li>
-                            </ol>
+                        <div class="completing-list__item">
+                            <div class="completing-list__preview">
+                                <img src="img/completing-preview-5.png" alt="">
+                            </div>
+                            <div>
+                                <div class="completing-list__title">Каркасные перегородки</div>
+                                <ul>
+                                    <li><span class="lightbold">Материал</span> сухая строганная доска (46х110 мм)</li>
+                                    <li><span class="lightbold">Шаг</span> 580 мм</li>
+                                    <li>Внутри перегородок установлены диагональные связи жесткости</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="completing-list__item">
-                        <div class="completing-list__preview">
-                            <img src="img/completing-preview-3.png" alt="">
-                        </div>
-                        <div>
-                            <div class="completing-list__title">Безрамное остекление</div>
-                            <ul>
-                                <li>Толщина стеклопакета: 56 мм</li>
-                                <li>Все стекла закаленные с энергосберегающим покрытием</li>
-                                <li>Заполнены аргоном</li>
-                                <li>С пластиковой дистанционной рамкой</li>
-                                <li>Защищает от ударов, осколков, шума, холода и избыточных УФ-лучей</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="completing-list__item">
-                        <div class="completing-list__preview">
-                            <img src="img/completing-preview-4.png" alt="">
-                        </div>
-                        <div>
-                            <div class="completing-list__title">Входные двери</div>
-                        </div>
-                    </div>
-                    <div class="completing-list__item">
-                        <div class="completing-list__preview">
-                            <img src="img/completing-preview-5.png" alt="">
-                        </div>
-                        <div>
-                            <div class="completing-list__title">Каркасные перегородки</div>
-                            <ul>
-                                <li><span class="lightbold">Материал</span> сухая строганная доска (46х110 мм)</li>
-                                <li><span class="lightbold">Шаг</span> 580 мм</li>
-                                <li>Внутри перегородок установлены диагональные связи жесткости</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="completing-list__item">
-                        <div class="completing-list__preview">
-                            <img src="img/completing-preview-6.png" alt="">
-                        </div>
-                        <div>
-                            <div class="completing-list__title">Дополнительно</div>
-                            <ul>
-                                <li>Упаковка</li>
-                                <li>Погрузка и разгрузка домокомплекта</li>
-                                <li>Монтаж коробки дома</li>
-                                <li>Монтаж окон и дверей</li>
-                            </ul>
+                        <div class="completing-list__item">
+                            <div class="completing-list__preview">
+                                <img src="img/completing-preview-6.png" alt="">
+                            </div>
+                            <div>
+                                <div class="completing-list__title">Дополнительно</div>
+                                <ul>
+                                    <li>Упаковка</li>
+                                    <li>Погрузка и разгрузка домокомплекта</li>
+                                    <li>Монтаж коробки дома</li>
+                                    <li>Монтаж окон и дверей</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -871,11 +1011,12 @@
             <div class="container">
                 <div class="contact-form">
                     <div class="container">
-                        <form>
+                        <form class="contact-form-submit">
                             <h2 class="section-h2">Остались вопросы?</h2>
                             <p class="contact-form__text">Задайте их напрямую производителю</p>
-                            <input class="input" placeholder="Ваше имя" type="text">
-                            <input class="input" placeholder="Номер телефона" type="tel">
+                            <input type="hidden" name="method" value="form">
+                            <input class="input" placeholder="Ваше имя" type="text" name="name">
+                            <input class="input" placeholder="Номер телефона" type="tel" name="phone">
                             <button class="button" data-link="contacts">Отправить</button>
                         </form>
                         <img class="contact-form__preview" src="img/contact-preview.png" alt="">
@@ -908,18 +1049,18 @@
                                 <div class="planner-list" data-list="planner-list">
                                     <div class="planner-list__item selected">
                                         <div class="container">
-                                            <img class="planner-list__preview" data-fullscreen="planner1" src="img/planner-1.png" alt="">
+                                            <img class="planner-list__preview" data-fullscreen="planner1" src="img/builder-planner-1.png" alt="">
                                             <div class="radio-wrapper">
-                                                <input class="radio" type="radio" name="planner" id="planner-type">
+                                                <input class="radio" type="radio" name="plan" data-plan="Планировка 1" value="Планировка 1" id="planner-type">
                                                 <label for="planner-type"">Выбрано</label>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="planner-list__item">
+                                    <div class="planner-list__item blocked">
                                         <div class="container">
-                                            <img class="planner-list__preview" data-fullscreen="planner2" src="img/planner-1.png" alt="">
+                                            <img class="planner-list__preview" data-fullscreen="planner1" src="img/planner-1.png" alt="">
                                             <div class="radio-wrapper">
-                                                <input class="radio" type="radio" name="planner" id="planner-type">
+                                                <input class="radio" type="radio" name="plan" data-plan="Планировка 1" value="Планировка 1" id="planner-type">
                                                 <label for="planner-type"">Выбрано</label>
                                             </div>
                                         </div>
@@ -944,15 +1085,16 @@
                                 </div>
                                 <div class="separator">или</div>
                                 <div class="radio-wrapper">
-                                    <input class="radio" type="radio" name="planner" id="planner-type">
+                                    <input class="radio" type="radio" name="plan" id="planner-type">
                                     <label for="planner-type"">Индивидуальная планировка</label>
                                 </div>
                             </div>
                             <div>
                                 <div class="overlay-item__title">2. Контактная информация</div>
-                                <input class="input" placeholder="Ваше имя" type="text">
-                                <input class="input" placeholder="Город" type="text">
-                                <input class="input" placeholder="Номер телефона" type="tel">
+                                <input type="hidden" name="method" value="form">
+                                <input class="input" placeholder="Ваше имя" type="text" name="name" required>
+                                <input class="input" placeholder="Город" type="text" name="city" required>
+                                <input class="input" placeholder="Номер телефона" type="tel" name="phone" required>
                                 <button class="button" data-link="contacts">Отправить</button>
                             </div>
                         </form>
@@ -980,18 +1122,18 @@
                                 <div class="planner-list" data-list="planner-list">
                                     <div class="planner-list__item selected">
                                         <div class="container">
-                                            <img class="planner-list__preview" data-fullscreen="planner1" src="img/planner-1.png" alt="">
+                                            <img class="planner-list__preview" data-fullscreen="planner1" src="img/builder-planner-2.png" alt="">
                                             <div class="radio-wrapper">
-                                                <input class="radio" type="radio" name="planner" id="planner-type">
+                                                <input class="radio" type="radio" name="plan" data-plan="Планировка 1" value="Планировка 1" id="planner-type">
                                                 <label for="planner-type"">Выбрано</label>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="planner-list__item">
+                                    <div class="planner-list__item blocked">
                                         <div class="container">
-                                            <img class="planner-list__preview" data-fullscreen="planner2" src="img/planner-1.png" alt="">
+                                            <img class="planner-list__preview" data-fullscreen="planner1" src="img/planner-1.png" alt="">
                                             <div class="radio-wrapper">
-                                                <input class="radio" type="radio" name="planner" id="planner-type">
+                                                <input class="radio" type="radio" name="plan" data-plan="Планировка 2" value="Планировка 2" id="planner-type">
                                                 <label for="planner-type"">Выбрано</label>
                                             </div>
                                         </div>
@@ -1016,21 +1158,22 @@
                                 </div>
                                 <div class="separator">или</div>
                                 <div class="radio-wrapper">
-                                    <input class="radio" type="radio" name="planner" id="planner-type">
+                                    <input class="radio" type="radio" name="plan" id="planner-type">
                                     <label for="planner-type"">Индивидуальная планировка</label>
                                 </div>
                             </div>
                             <div>
                                 <div class="overlay-item__title">2. Контактная информация</div>
-                                <input class="input" placeholder="Ваше имя" type="text">
-                                <input class="input" placeholder="Город" type="text">
-                                <input class="input" placeholder="Номер телефона" type="tel">
+                                <input type="hidden" name="method" value="form">
+                                <input class="input" placeholder="Ваше имя" type="text" name="name" required>
+                                <input class="input" placeholder="Город" type="text" name="city" required>
+                                <input class="input" placeholder="Номер телефона" type="tel" name="phone" required>
                                 <button class="button" data-link="contacts">Отправить</button>
                             </div>
                         </form>
                     </div>
                     <div class="planner-footer">
-                        <div class="planner-footer__title">Домокомплект «Гелиос» (с террасой)</div>
+                        <div class="planner-footer__title">Домокомплект «Гелиос» (Расширенный)</div>
                         <div class="planner-footer__price">
                             <span>6,45 млн. руб</span>
                             <span>8,25 млн. руб</span>
@@ -1155,6 +1298,52 @@
                             <ul class="gallery-pagginator">
                                 <li class="gallery-pagginator__item selected"></li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay-item" data-overlay="equipment" style="max-width: 1004px;">
+                    <div class="overlay-item__header">
+                        <div class="overlay-item__title">Комплектация<br> быстровозводимых домов «Гелиос»</div>
+                        <div class="overlay-item__close"></div>
+                    </div>
+                    <div class="overlay-item__content">
+                        <div class="equipment-wrapper">
+                            <div class="equipment-item">
+                                <img class="equipment-item__preview" src="img/equipment-1.jpg" alt="">
+                                <h4 class="equipment-item__title">Базовый</h4>
+                                <ul class="constituents-list">
+                                    <li class="constituents-list__item plus">Стеновой комплект</li>
+                                    <li class="constituents-list__item plus">Плоская кровля</li>
+                                    <li class="constituents-list__item plus">Безрамное остекление</li>
+                                    <li class="constituents-list__item plus">Входные двери</li>
+                                    <li class="constituents-list__item plus">Каркасные перегородки</li>
+                                    <li class="constituents-list__item minus">Терраса</li>
+                                    <li class="constituents-list__item minus">Хозблок</li>
+                                    <li class="constituents-list__item minus">Навес и крыльцо</li>
+                                    <li class="constituents-list__item plus">Упаковка</li>
+                                    <li class="constituents-list__item plus">Погрузка и разгрузка домокомплекта</li>
+                                    <li class="constituents-list__item plus">Монтаж коробки дома</li>
+                                    <li class="constituents-list__item plus">Монтаж окон и дверей</li>
+                                </ul>
+                            </div>
+                            <div class="equipment-item">
+                                <img class="equipment-item__preview" src="img/equipment-2.jpg" alt="">
+                                <h4 class="equipment-item__title">Расширенный</h4>
+                                <ul class="constituents-list">
+                                    <li class="constituents-list__item plus">Стеновой комплект</li>
+                                    <li class="constituents-list__item plus">Плоская кровля</li>
+                                    <li class="constituents-list__item plus">Безрамное остекление</li>
+                                    <li class="constituents-list__item plus">Входные двери</li>
+                                    <li class="constituents-list__item plus">Каркасные перегородки</li>
+                                    <li class="constituents-list__item plus">Терраса</li>
+                                    <li class="constituents-list__item plus">Хозблок</li>
+                                    <li class="constituents-list__item plus">Навес и крыльцо</li>
+                                    <li class="constituents-list__item plus">Упаковка</li>
+                                    <li class="constituents-list__item plus">Погрузка и разгрузка домокомплекта</li>
+                                    <li class="constituents-list__item plus">Монтаж коробки дома</li>
+                                    <li class="constituents-list__item plus">Монтаж окон и дверей</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1446,19 +1635,20 @@
                 </a>
             </div>
             <div>
-                <table class="footer-table">
-                    <tbody>
-                        <tr>
-                            <td>ИНН: </td><td>text</td>
-                        </tr>
-                        <tr>
-                            <td>ОГРНИП: </td><td>text</td>
-                        </tr>
-                        <tr>
-                            <td>Юр. адрес: </td><td>text</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="footer-data">
+                    <div class="footer-data__row">
+                        <span>ИНН:</span>
+                        <span>434579726879</span>
+                    </div>
+                    <div class="footer-data__row">
+                        <span>ОГРНИП:</span>
+                        <span>313434526100031</span>
+                    </div>
+                    <div class="footer-data__row">
+                        <span>Юр. адрес:</span>
+                        <span>Вершининский переулок, д. 1, к. 1, кв. 5</span>
+                    </div>
+                </div>
                 <a class="footer-link" href="">Политика конфиденциальности</a>
                 <a class="footer-link" href="">Договор оферты</a>
             </div>
