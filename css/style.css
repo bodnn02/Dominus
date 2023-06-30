@@ -1814,6 +1814,11 @@ b {
     min-height: 346px;
 }
 .planner-list__item {
+    border-radius: 10px;
+    border: 1px solid #D1D1D1;
+    background: #FFF;
+}
+.planner-list__item {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -1827,7 +1832,7 @@ b {
 }
 .planner-list__item img {
     width: 100%;
-    height: 100%;
+    max-width: 100%;
 }
 .planner-list__item.selected {
     top: 0;
@@ -1836,12 +1841,17 @@ b {
     left: 0;
 
     width: 346px;
-    height: 346px;
+    height: fit-content;
+    max-height: 346px;
 
     z-index: 2;
 }
 .planner-list__item > .container {
     position: relative;
+
+    height: calc(100% - 46px);
+
+    padding: 5px 0px 41px 0px;
 }
 .planner-list__item.blocked {
     opacity: .3;
