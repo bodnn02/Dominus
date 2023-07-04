@@ -3413,6 +3413,9 @@ b {
     .steps-list__item {
         height: calc(204px - 40px);
     }
+    .main-section {
+        background-size: auto 200px;
+    }
 }
 
 /* Adaptive styles *Stop* */
