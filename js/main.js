@@ -188,6 +188,16 @@ $(".m-pagginator__prev").click(function() {
     pagginator_list = $(this).parent().find(".m-pagginator__pages").children(".m-pagginator__page")
     list = $("[data-list="+attr+"]").children("*")
 
+    if ($(list).eq(current_index - 1).hasClass("blocked")) {
+        $(list).removeClass("selected")
+        $(list).eq(0).addClass("selected")
+
+        $(pagginator_list).removeClass("selected")
+        $(pagginator_list).eq(0).addClass("selected")
+
+        return false;
+    }
+
     if(current_index - 1 < 0) {
         $(list).removeClass("selected")
         $(list).eq($(list).length - 1).addClass("selected")
@@ -209,7 +219,7 @@ $(".m-pagginator__next").click(function() {
     pagginator_list = $(this).parent().find(".m-pagginator__pages").children(".m-pagginator__page")
     list = $("[data-list="+attr+"]").children("*")
 
-    if(current_index + 1 == $(list).length) {
+    if(current_index + 1 == $(list).length || $(list).eq(current_index + 1).hasClass("blocked")) {
         $(list).removeClass("selected")
         $(list).eq(0).addClass("selected")
 
