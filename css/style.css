@@ -674,6 +674,7 @@ b {
     margin-bottom: 10px;
 }
 .list {
+    margin-left: 20px;
     list-style: "- ";
 }
 .list__item {
@@ -2221,6 +2222,35 @@ b {
         max-width: 310px;
     }
 }
+@media (max-width: 1800px) {
+    .completing-list {
+        grid-template-columns: 1fr;
+    }
+    .completing-list__item {
+        display: grid;
+        grid-template-columns: 293px 1fr;
+        gap: 34px;
+    }
+    .completing-list__item:not(:last-child) {
+        margin-bottom: 25px;
+    }
+    .completing-list__title {
+        text-align: left;
+    }
+    .completing-list__preview {
+        margin: 0;
+        width: 100%;
+        height: fit-content;
+    }
+    .completing-list__preview > img {
+        max-width: 100%;
+        width: fit-content;
+        max-height: 238px;
+    }
+    .completing-list ul, .completing-list ol {
+        margin-left: 20px;
+    }
+}
 @media (max-width: 1700px) {
     .header > .container, .main-section > .container, .methods-section > .container, .control-section > .container, .home-builder > .container, .conditions > .container, .work-steps > .container, .comfort > .container, .work-ready > .container {
         margin: 0 100px;
@@ -2507,6 +2537,10 @@ b {
     }
     .interior-section__gallery-item {
         height: fit-content;
+    }
+    .interior-form__price {
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
 }
 @media (max-width: 1103px){
